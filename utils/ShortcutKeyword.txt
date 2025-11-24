@@ -1,0 +1,4 @@
+Shift+Alt+F  ==> Beautify
+Shift+Alt + O => Gereksiz Kütüphaneleri kaldırır
+Ctrl + K      ==> Comment 
+Ctrl + K      ==> UnComment 
