@@ -100,7 +100,6 @@ git push -u origin master
 
 ---
 
-
 ## GitHub Link
 
 ```sh
@@ -136,16 +135,19 @@ React datasheet ==> https://tr.react.dev/
 
 ---
 
-
-
 ---
 
 ## ReactJs Install
 
 ```sh
 npx create-react-app [projectName]
+
+npx create-react-app blog
 cd blog
 npm start
+
+// Toast
+npm i react-hot-toast
 
 // edit
 npm install lucide-react
@@ -173,9 +175,8 @@ npm install nodemon -D
 
 ---
 
-
-
 ## Npm Komutları
+
 ```sh
 node -v
 npm  -v
@@ -229,7 +230,7 @@ npm unistall express
 # UPDATE
 npm update # Bütün bağımlılıkları güncellemek
 npm update express
-````
+```
 
 ## Nodemon
 
@@ -258,9 +259,7 @@ npm run nodemon_q
 
 ---
 
-
-
-## 
+##
 
 ```sh
 

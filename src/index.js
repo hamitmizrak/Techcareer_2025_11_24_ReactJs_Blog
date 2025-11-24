@@ -14,7 +14,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Counter from './app/Counter';
 import { BrowserRouter } from 'react-router-dom';
-import ResuabilityToast from './reusability/ResuabilityToast';
+import ResuabilityToast from './reusability/ReusabilityToast';
 
 // Root
 const root = ReactDOM.createRoot(document.getElementById('root'));
