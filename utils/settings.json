@@ -1,0 +1,200 @@
+{
+  "editor.mouseWheelZoom": true,
+  "editor.fontSize": 18,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Otomatik kaydetme
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.mouseWheelZoom": true,
+
+  ////////////////////////////////////////////////////
+  // Fira Code
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  ////////////////////////////////////////////////////
+  // ESLint ile otomatik düzeltme (varsa)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Sadece bu projede Prettier ve ESLint çalışsın
+  // "prettier.requireConfig": true,
+  // "eslint.workingDirectories": ["./"]
+
+  ////////////////////////////////////////////////////
+  // Tab ve boşluk ayarları
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  ////////////////////////////////////////////////////
+  // Türkçe karakter hatalarını engelle
+  "files.encoding": "utf8",
+
+  ////////////////////////////////////////////////////
+
+  // Dosya sonunda otomatik yeni satır
+  "files.insertFinalNewline": true,
+
+  ////////////////////////////////////////////////////
+
+  // Otomatik import sırası (JS için)
+  "javascript.preferences.importModuleSpecifier": "relative",
+
+  ////////////////////////////////////////////////////
+
+  // Satır uzunluğu
+  "editor.wordWrap": "on",
+  "editor.rulers": [100],
+
+  ////////////////////////////////////////////////////
+
+  // Gereksiz dosyaları explorer'da gizle
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.parcel-cache": true
+  },
+
+  ////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////
+  // Emmet genişletmesini "Tab" tuşu ile etkinleştirir
+  "emmet.triggerExpansionOnTab": true,
+
+  // HTML ve CSS için otomatik kapanan etiketleri tamamlar
+  "emmet.syntaxProfiles": {
+    "html": {
+      "self_closing_tag": "xhtml"
+    }
+  },
+
+  // Boş öğelerde otomatik olarak boşluk bırakır
+  "emmet.preferences": {
+    "format.forceIndentationForEmmet": true,
+    //"format.noIndentTags": "html, body, head",
+    "format.selfClosingStyle": "xhtml" // <br />, <img />, vb.
+  },
+
+  // CSS için kısa yazımları destekler
+  "emmet.showAbbreviationSuggestions": true,
+
+  // HTML etiketleri için otomatik tamamlama önerileri verir
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+
+  // Prettier ayarları
+
+  // Kaydettiğinizde dosyayı otomatik olarak biçimlendirir
+  "editor.formatOnSave": true,
+
+  // Biçimlendirici olarak Prettier'ı kullan
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // HTML etiketlerinde tek tırnak (' ') kullan
+  "prettier.singleQuote": true,
+
+  // Her girinti için 2 boşluk kullan
+  "prettier.tabWidth": 2,
+
+  // Tab yerine boşluk kullan
+  "prettier.useTabs": false,
+
+  // HTML dosyalarında boşluk hassasiyetini azaltır (örneğin `<div>  </div>`)
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+
+  // Satır uzunluğu en fazla 100 karakter olsun
+  "prettier.printWidth": 100,
+
+  // Sonunda noktalı virgül eklensin mi? (JS/TS için)
+  "prettier.semi": true,
+
+  // Objelerde son elemandan sonra da virgül koyulsun mu? (JS/TS için)
+  "prettier.trailingComma": "es5",
+
+  // JSX (React) gibi yapılarda > işareti bir sonraki satıra alınsın mı?
+  "prettier.jsxBracketSameLine": false,
+
+  // Ok fonksiyonlarında parantez her zaman zorunlu mu? (JS için)
+  "prettier.arrowParens": "always",
+
+  // HTML genişletmelerinde satır sonu otomatik ekler
+  "emmet.variables": {
+    "lang": "en",
+    "charset": "UTF-8"
+  },
+
+  // Emmet ile genişletilmiş HTML kodlarını biçimlendirir
+  "editor.formatOnPaste": true,
+  // JSX / React gibi ortamlarda Emmet’in çalışmasını sağlar
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescriptreact": "html",
+    //"javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmPasteNative": false,
+  "RainbowBrackets.depreciation-notice": false,
+  "python.locator": "js",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.startupEditor": "none",
+  "git.openRepositoryInParentFolders": "always",
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.defaultFormatter": "GitHub.copilot",
+  "notebook.lineNumbers": "on",
+  "editor.scrollbar.horizontalScrollbarSize": 15,
+  "editor.overtypeCursorStyle": "line",
+  "diffEditor.maxFileSize": 120,
+  "debug.console.fontSize": 18,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "mdb.mcp.server": "prompt",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontSize": 19,
+  "window.confirmSaveUntitledWorkspace": false
+}
