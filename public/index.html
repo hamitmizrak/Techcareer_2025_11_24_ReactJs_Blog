@@ -1,24 +1,162 @@
+<!-- Html5 -->
 <!DOCTYPE html>
+
+<!-- this page is  language english -->
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- title -->
+    <title>SPA(Single Page Application)</title>
+
+    <!-- Türkce karakter -->
+    <meta charset="UTF-8" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../src/shared/assets/images/pictures/main1.jpg" type="image/x-icon" />
+
+    <!-- other browser -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <!-- Required meta tags -->
+    <meta name="author" content="Hamit Mızrak" />
+    <meta name="designer" content="Hamit Mızrak" />
+    <meta name="copyright" content="Hamit Mızrak" />
+    <meta name="owner" content="Hamit Mızrak" />
+    <meta name="description" content="Html5,css3,js,jquery,bootstrap,java,database " />
+    <meta name="keyword" content="Html5,css3,js,jquery,bootstrap,java,database " />
+    <meta name="title" content="Full Stack Developer" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="revised" content="Monday, 1st January 2024, 5:00 pm" />
+    <meta name="language" content="Turkish" />
+    <meta name="url" content="" />
+    <meta name="identifier-URL" content="" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="google-site-verification" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="yandex-verification" content="" />
+    <meta name="alexaVerifyID" content="" />
+    <meta name="p:domain_verify" content="" />
+    <meta name="application-name" content="SPA(Single Page Application)" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage" content="../../pictures/main1.jpg" />
+    <meta name="apple-mobile-web-app-title" content="SPA(Single Page Application)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- important dependencies -->
+    <!-- jquery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" /> -->
+
+    <!-- Bootstrap CDN CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-      <meta
-              name="author"
-              content="MsC Computer Engineeer Hamit Mızrak"
-      />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>React App</title>
+
+    <!-- Font Awesome (npm ile) -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+
+    <!-- jquery  -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="../node_modules/jquery-ui/dist/themes/base/jquery-ui.css" />
+
+    <!-- jQuery UI JS -->
+    <script src="../node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+
+    <!-- react libraries -->
+    <!--
+     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+ -->
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../src/app/index.css" />
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar_second" data-bs-offset="100" tabindex="0">
+    <noscript>
+      <div class="alert alert-danger text-center">
+        <strong>Uyarı!</strong>
+        Sizin browserinız javascripti desteklemiyor Lütfen JavaScript'i çalıştıracak yeni güncel
+        browser deneyiniz.
+      </div>
+    </noscript>
+
+    <!-- ROOT -->
     <div id="root"></div>
+
+    <!-- for bootstrap script -->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Animnasyon için script -->
+    <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <!-- WOW init -->
+    <script>
+      new WOW({
+        boxClass: 'wow',
+        animateClass: 'animate__animated', // Animate.css v4 için zorunlu!
+        offset: 0,
+        mobile: true,
+        live: true,
+      }).init();
+    </script>
+    <!-- <script> new WOW(
+        {
+            boxClass: 'wow',      // default
+            animateClass: 'animated', // default
+            offset: 0,          // default
+            mobile: true,       // default
+            live: true        // default
+        }
+    ).init() </script> -->
+
+    <!-- Bootstrap CDN JavaScript Libraries -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- for Bootstrap CDN JavaScript Libraries -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- counterUp2 CDN (bundlersız kullanım için) -->
+    <script src="../node_modules/counterup2/dist/index.js"></script>
   </body>
 </html>
