@@ -1,6 +1,5 @@
 // rcc
 import axios from 'axios';
-import React, { Component } from 'react';
 
 // .env REACT_APP_BACKEND_URL
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;

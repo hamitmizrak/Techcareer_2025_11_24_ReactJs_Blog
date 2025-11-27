@@ -31,9 +31,8 @@ function RouterApp() {
                 <Route path={'/index'} element={<MainComponent/>}/>
                 <Route path={'*'} element={<MainComponent/>}/>
 
-                {/* Blog Category List (içinde Göster/Create/Update modalları var) */}
+                {/* Blog Category List (içinde View/Create/Update modalları var) */}
                 <Route path="/blog/category/list" element={<BlogCategoryList/>}/>
-
             </Routes>
 
             {/* FOOTER */}
